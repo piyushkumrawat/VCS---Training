@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Plan</title>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:space-around;
+                /* font-family: 'Baloo Bhai 2', cursive; */
+                font-family: 'Ubuntu', sans-serif;
+                
+                
+            }
+            .checkout{
+                width: 100%;
+                height: 14%;
+                /* border: 2px solid red; */
+                text-align: center;
+                font-family: 'Baloo Bhai 2', cursive;
+                background-color: rgb(83, 81, 81);
+                color: white;
+                
+                
+            }
+            .detail{
+                width: 60%;
+                height: 480px;
+                border: 2px solid rgba(37, 35, 35, 0.164);
+                margin: 35px 20px;
+                padding: 5px 10px;
+                
+            }
+            .bill{
+                width: 30%;
+                height: 290px;
+                border: 2px solid black;
+                margin: 120px 20px;
+                padding: 5px 10px;
+                
+            }
+            #promo{
+                text-align: center;
+            }
+            .plan{
+                text-align: center;
+            }
+            .name{
+                margin: 10px 10px;
+                padding: 4px 10px;
+            }
+            #number{
+                text-align: center;
+            }
+            #email{
+                margin: 10px 6px;
+                padding: 4px 10px;
+                width: 460px;
+            }
+            #address{
+                margin: 10px 30px;
+                padding: 4px 10px;
+                width: 460px;
+            }
+            .btn{
+                margin: auto;
+                width: 120px;
+                height: 30px;
+                text-align: center;
+                background-color: rgb(219, 143, 2);
+                color: black;
+                font-size: 14px;
+                font-weight: bold;
+            text-shadow: black;
+            border: 2px solid rgb(219, 143, 2);
+                border-radius: 5px;
+            }
+            .btn:hover{
+                cursor: pointer;
+            }
+            .btn2{
+                margin: auto;
+                width: 80px;
+                height: 22px;
+                text-align: center;
+            }
+            .btn2:hover{
+                cursor: pointer;
+            }
+            #FormEmail1{
+                width: 230px;
+                height: 15px;
+                text-align: center;
+            }
+          #FormPassword1{
+            width: 230px;
+                height: 15px;
+                text-align: center;
+          }
+          div::after{
+            content: "";
+            background-image: url(bg.jpg);
+            /* background-image: url(join-background.jpg); */
+            /* opacity: 0.5; */
+            background-size: 100%;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position-y: bottom;
+            background-position-x: right;
+            z-index: -1;
+           }
+          .btn1:hover{
+            cursor: pointer;
+          }
+        </style>
+    </head>
+</html>
+<body>
+    <div class="checkout">
+        <h1>Checkout Form</h1>
+    </div> 
+    <div class="detail">
+        <div class="plan">
+        <h2>Plan Details</h2>
+        <h3>Plan Name : Enterprise</h3>
+        <p><strong>Charges : 20 Rs / Month (Per Student)</strong> </p> <b> <hr color="black"></b>
+    </div>
+        <h3>Billing Address</h3>
+        <form action="#">
+        <label for="name">First Name</label>
+         <input class="name" type="text" id="name" placeholder="First Name">
+         <label for="lastname">Last Name</label>
+         <input class="name" type="text" id="lastname" placeholder="Last Name"> <br>
+         <label for="email">Contact No.  </label>
+         <input type="email" name="email" id="email"  class="billmargin"> <br> <!--before it was email -->
+         <label for="address">Address </label>
+         <input type="text" id="address" class="billmargin">
+        </form>
+        <div class="dropdown-menu">
+            <form class="px-4 py-3">
+              <div class="mb-3">
+                <label for="FormEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="FormEmail1" placeholder="email@example.com">
+              </div> <br>
+              <div class="mb-3">
+                <label for="FormPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="FormPassword1" placeholder="Password">
+              </div> <br>
+              <div class="mb-3">
+                <div class="form-check">
+
+                  <!-- <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                  <label class="form-check-label" for="dropdownCheck">
+                    Remember me
+                  </label> -->
+
+                </div>
+              </div>
+              <button type="submit" class="btn2">Sign in</button> 
+            </form>
+            <div class="dropdown-divider"></div>
+            <br>
+            <a class="dropdown-item" href="#">New around here? Sign up</a> &nbsp;&nbsp;&nbsp;
+            <a class="dropdown-item" href="#">Forgot password?</a>
+          </div>
+    </div>
+    <div class="bill">
+            <h3>Payment Details:</h3>
+            <h4>20 Rs/Month (Per Student)</h4>
+            <strong> Total Number of Students </strong> <br> <br>
+            <input type="number" name="number" id="number" placeholder="Number of Students"> <br> <br>
+            <label for="promo">Apply Promocode</label>
+            <input type="text" name="prono" id="promo" placeholder="Enter Promocode">
+            <button class="btn1">Apply</button> <br> <br>
+            <label for="amount">Total Amount</label> 
+            <input type="number" name="amount" id="amount"> <br> <br>
+            <button class="btn">Go to Payment</button>
+
+    </div>
+
+
+
+
+</body>
