@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Shopping World</title>
+    <style>
+    
+        body{
+            background-color: rgba(250, 235, 215, 0.486);
+            margin: 0px 0px;
+            padding: 0px 0px;
+        }
+    
+        #head{
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 6.7rem;
+            border-bottom: 3px solid white;
+            background-color: rgba(7, 5, 5, 0.76);
+            /* border-color: rgba(7, 5, 5, 0.671); */
+            /* border-radius: 10px; */
+            display: flex;
+        }
+        .logo{
+            display: inline;
+        }
+        .logo img{
+            /* display: inline; */
+            /* margin: auto; */
+            margin-left: 15px;
+            border-radius: 30px;
+            width: 8em;
+            height: 5em;
+        }
+        .search{
+            text-align: center;
+            border: 1px solid rgba(7, 5, 5, 0.726);
+            border-radius: 7px;
+            width: 300px;
+            height: 30px;
+            font-size: small;
+            /* margin-right: 150px; */
+            margin: auto;
+        }
+        #search{
+            margin: auto;
+        }
+        .login
+        {
+            margin: auto;
+            text-decoration: none;
+            /* display: flex; */
+        }
+        .login a
+        {
+            
+            color: white;
+            /* font-size: large; */
+            /* font-weight: bold; */
+            text-decoration: none;
+        }
+        .login a:hover{
+            border: 1px solid white;
+            border-radius: 2px;
+            
+        }
+        .login img{
+            width: 12px;
+            height: 12px;
+            /* display: inline; */
+            transform: scale(1.1);
+        }
+        .cart{
+            margin: auto;
+            text-align: center;
+            color: white;
+        }
+        div.cart:hover{
+            border: 1.5px solid white;
+            /* transform:skale(1.1); */
+        }
+        .cart img{
+            width: 3.3rem;
+            height: 3.2rem;
+            cursor: pointer;
+            
+        }
+        .cart a{
+            text-decoration: none;
+            color: white;
+            
+        }
+        .dropdown{
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+        }
+        .banner{
+            margin: auto;
+            /* border: 2px solid white; */
+        }
+        .banner img{
+            margin: auto;
+            /* width: 84.2em; */
+            width: 100%;
+            height: 34em;
+        }
+        #categorie{
+            /* border: 2px solid red; */
+            display: inline-flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 31em;
+        }
+        h1{
+            text-align: center;
+            font-weight: bold;
+        }
+        .items{
+            text-align: center;
+            margin: auto;
+            width: 22em;
+            /* border: 2px solid yellow; */
+        }
+        .items img{
+            /* margin: 25px; */
+            border: 2px solid black;
+            width: 22em;
+            height: 29em;
+        }
+        .categories{
+            
+            justify-content:space-around;
+            margin: auto;
+        }
+       
+        .items h3{
+            display: inline-block;
+            font-size: 20px;
+        }
+        .items3{
+            text-align: center;
+            margin: auto;
+            width: 22em;
+            /* border: 2px solid yellow; */
+        }
+        .items3 img{
+            /* margin: 25px; */
+            border: 2px solid black;
+            width: 25em;
+            height: 29em;
+        }
+        .items3 h3{
+            display: inline-block;
+            font-size: 20px;
+        }
+        #footer{
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            padding-left: 3em;
+            margin: auto;
+            align-items: center;
+            /* border: 2px solid red; */
+            border-top: 3px solid black;
+            background-color: rgba(7, 5, 5, 0.76);
+            color: white;
+            width: 100%;
+            height: 9em;
+        }
+        .logobox{
+            width: 7em;
+            height: 5em;
+            /* border: 2px solid black; */
+            /* margin: auto; */
+        }
+        .footerbox{
+            width: 10em ;
+            height: 6em;
+            /* border: 2px solid black; */
+        }
+        .footerbox a img{
+            width: 1.3em;
+            height: 1.3em;
+        }
+        .contact{
+            background-color: rgba(7, 5, 5, 0.76);
+            color: white;
+            width: 100%;
+            height: 1.7em;
+            text-align: center;
+            /* border: 2px solid yellow; */
+        }
+        .contact a{
+            margin: auto;
+        }
+        .items:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+            
+        }
+        .footerbox a{
+            text-decoration: none;
+            color: white;
+        }
+        .contact a{
+            text-decoration: none;
+            color: white;
+        }
+        .logo h2{
+                text-align: center;
+                margin-left: 20px;
+                color: white;
+                font-size: 17px;
+        }
+        .logobox img{
+                width: 6em;
+                height: 6em;
+            
+        }
+        .logobox h3{
+            font-size: 13px;
+            /* margin-left: 10px; */
+            padding-right: 10px;
+            text-align: center;
+        }
+        .items3:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+            
+        }
+        #carouselExampleInterval img{
+            width: 90%;
+            height: 35em;
+        }
+    
+    </style>
+</head>
+<body>
+
+    
+    <header id="head">
+        <div class="logo">
+            <img src="smil.png" alt="logo">
+            <h2>Happy Shop</h2>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </button>
+            <ul class="dropdown-menu" >
+              <li><a class="dropdown-item" href="#">Home</a></li>
+              <li><a class="dropdown-item" href="#">Offer zone</a></li>
+              <li><a class="dropdown-item" href="#">About us</a></li>
+              <li><a class="dropdown-item" href="#">Contact</a></li>
+            </ul>
+          </div>
+        <div id="search">
+        <input type="text" class="search" placeholder="Search for Products"> 
+    </div>
+    <div class="login">
+        <a href="login.html">Login  <img src="log2.png" alt="login"></a>|  
+        <a href="registration.html">  Signup <img src="log.jpg" alt="registration"></a>
+    </div>
+       
+        <div class="cart">
+            <img src="cart1.png" alt="cart_image" > <br><a href="#">Cart</a>
+
+        </div>
+        
+    </header>
+
+    <!-- <div class="banner">
+        <img src="banner2.png" alt="banner">
+    </div> -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5700">
+            <img src="ban1.png" class="d-block w-100" alt="banner">
+          </div>
+          <div class="carousel-item" data-bs-interval="5700">
+            <img src="ban2.png" class="d-block w-100" alt="banner">
+          </div>
+          <div class="carousel-item" data-bs-interval="5700">
+            <img src="ban3.png" class="d-block w-100" alt="banner">
+          </div>
+          <div class="carousel-item" data-bs-interval="5700">
+            <img src="ban4.png" class="d-block w-100" alt="banner">
+          </div>
+          <div class="carousel-item" data-bs-interval="5700">
+            <img src="ban5.png" class="d-block w-100" alt="banner">
+          </div>
+          <div class="carousel-item" data-bs-interval="5700">
+            <video src="ban6.mp4" class="d-block w-100" alt="banner"></video>
+            <!-- <img src="ban6.mp4" class="d-block w-100" alt="banner"> -->
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <hr>
+    <br><br>
+    <h1>Categories</h1>
+    <br><br>
+    <div id="categorie">
+        <!-- <div class="categories"> -->
+            <div class="items">
+                <img src="men7.jpg" alt="mens_faishon" >
+                <h3>Men</h3>
+            </div>
+            <div class="items">
+                <img src="women.jpg" alt="womens_faishon">
+                <h3>Women</h3>                
+
+            </div>
+            <div class="items">
+                <img src="kids.jpg" alt="kids">
+                <h3>Kids</h3>                
+
+            </div>
+        </div>
+<br> <br><br>
+        <!-- Categorie row 2 -->
+
+        <div id="categorie">
+            <!-- <div class="categories"> -->
+                <div class="items">
+                    <img src="mobile.png" alt="mobile">
+                    <h3>Mobile</h3>
+                </div>
+                <div class="items">
+                    <img src="laptop2.jpg" alt="laptop">
+                    <h3>Laptop</h3>                
+    
+                </div>
+                <div class="items">
+                    <img src="acc.png" alt="accessories">
+                    <h3>Accessories</h3>                
+    
+                </div>
+            </div><br><br><br>
+
+            <!-- categories row 3 -->
+            <div id="categorie">
+                <!-- <div class="categories"> -->
+                    <div class="items3">
+                        <img src="electronic.jpg" alt="electronics">
+                        <h3>Electronic</h3>
+                    </div>
+                    <div class="items3">
+                        <img src="toys.jpg" alt="toys">
+                        <h3>Toys</h3>                
+        
+                    </div>
+                
+                </div>
+
+                <footer id="footer">
+                    <div class="logobox">
+                        <img src="smil.png" alt="logo">
+                        <h3>Happy Shop</h3>
+                    </div>
+                    <div class="footerbox">
+                        <h6>Connect with us</h6>
+                        <a href="#"><img src="fb.png" alt="facebook_logo"> Facebook</a><br>
+                        <a href="#"><img src="tw.png" alt="twitter_logo"> Twitter</a><br>
+                        <a href="#"><img src="insta.jpg" alt="instagram_logo"> Instagram</a>
+                    </div>
+                    <div class="footerbox">
+                        <h6>Get to Know Us</h6>
+                        <a href="#">&#9830; About us</a><br>
+                        <a href="#">&#9830; Careers</a>
+                    </div> <br>
+                </footer>
+                <div class="contact">
+                    Contact us : <a href="#">happyshop@gmail.com</a>
+                </div>
+</body>
+<body>
+</html>
+
+
